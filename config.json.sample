@@ -15,6 +15,7 @@
     {
       "size": 450,
       "directory": "./resized/medium",
+      "blur": "80,20",
       "suffix": "_medium"
     },
     {
