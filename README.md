@@ -52,6 +52,7 @@ It's copy of our example file `config.json.sample`. More or less it looks like:
     {
       "size": 450,
       "directory": "./resized/medium",
+      "blur": "80,20",
       "suffix": "_medium"
     },
     {
@@ -102,7 +103,8 @@ It's copy of our example file `config.json.sample`. More or less it looks like:
 |    resize     |        -        |  Array  | Resize setting list of following fields.                                                                                                  |
 |               |      size       |  String | Image dimensions. [See ImageMagick geometry documentation](http://imagemagick.org/script/command-line-processing.php#geometry).           |
 |               |     format      |  String | Image format override. If not supplied, it will leave the image in original format.                                                       |
-|               |      crop       |  String | Dimensions to crop the image. [See ImageMagick crop documentation](http://imagemagick.org/script/command-line-options.php#crop).          |
+|               |      crop       |  String | Dimensions to crop the image. [See ImageMagick crop documentation](http://imagemagick.org/script/command-line-options.php#crop).  
+|               |      blur       |  String | Radius and optional sigma (standard deviation) to blur the image.|
 |               |     gravity     |  String | Changes how `size` and `crop`. [See ImageMagick gravity documentation](http://imagemagick.org/script/command-line-options.php#gravity).   |
 |               |     quality     |  Number | Determine reduced image quality ( forces format `JPG` ).                                                                                  |
 |               |  jpegOptimizer  |  String | Determine optimiser that should be used `mozjpeg` (default) or `jpegoptim` ( only `JPG` ).                                                |
